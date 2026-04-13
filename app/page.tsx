@@ -80,20 +80,6 @@ export default function Home() {
             </span>
             <span>Prompt Rock</span>
           </div>
-          <div className="hidden md:flex items-center gap-6">
-            <a className="text-primary font-semibold hover:text-primary transition-colors duration-300" href="#">
-              Tool
-            </a>
-            <a className="text-zinc-500 hover:text-primary transition-colors duration-300" href="#">
-              Documentation
-            </a>
-            <a className="text-zinc-500 hover:text-primary transition-colors duration-300" href="#">
-              Models
-            </a>
-          </div>
-          <div className="text-primary font-body tracking-tight text-[11px] uppercase opacity-60">
-            Powered by OpenRouter
-          </div>
         </div>
       </nav>
 
@@ -224,13 +210,13 @@ export default function Home() {
       <footer className="w-full py-12 bg-transparent">
         <div className="max-w-[760px] mx-auto text-center px-4 font-body uppercase tracking-[0.05em] text-[10px]">
           <div className="flex justify-center gap-8 mb-6 text-zinc-500">
-            <a className="hover:text-zinc-400 transition-colors" href="#">
+            <a href="https://example.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-400 transition-colors">
               Privacy Policy
             </a>
-            <a className="hover:text-zinc-400 transition-colors" href="#">
+            <a href="https://example.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-400 transition-colors">
               Terms of Service
             </a>
-            <a className="hover:text-zinc-400 transition-colors" href="#">
+            <a href="https://www.mdhabibullahmahmud.work/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-400 transition-colors">
               Contact Xenon
             </a>
           </div>

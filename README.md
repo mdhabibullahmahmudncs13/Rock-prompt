@@ -191,7 +191,7 @@ Generates optimized production build in `.next/` directory. No errors should app
 
 4. **Your app will be live** at:
    ```
-   https://prompt-rock-xenon.vercel.app
+   https://yourappname.vercel.app
    ```
 
 ### Vercel Configuration
@@ -318,9 +318,9 @@ MIT — Feel free to use this for personal and commercial projects.
 
 ## Support
 
-- 📧 Email: [contact@xenon.dev](mailto:contact@xenon.dev)
-- 🐛 Issues: [GitHub Issues](https://github.com/xenon-dev/prompt-rock/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/xenon-dev/prompt-rock/discussions)
+- 📧 Email: [contact@xenon.dev](mailto:mdhabibullahmahmudncs13@gmail.com)
+- 🐛 Issues: [GitHub Issues](https://github.com/mdhabibullahmahmudncs13/Rock-prompt/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/mdhabibullahmahmudncs13/Rock-prompt/discussions)
 
 ## Roadmap
 
@@ -334,11 +334,11 @@ MIT — Feel free to use this for personal and commercial projects.
 
 ## Credits
 
-Built with ❤️ by **Xenon**
+Built by **m.h.mahmud**
 
 - UI designed in **Google Stitch**
 - Powered by **OpenRouter** AI API
-- Deployed on **Vercel**
+- Deployed on **Netlify**
 - Styled with **Tailwind CSS**
 
 ---
