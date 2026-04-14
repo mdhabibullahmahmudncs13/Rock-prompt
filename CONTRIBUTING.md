@@ -15,7 +15,7 @@ Thank you for your interest in contributing! This document outlines the guidelin
 
 ```bash
 # Fork on GitHub, then clone your fork
-git clone https://github.com/YOUR_USERNAME/prompt-rock-xenon.git
+git clone https://github.com/mdhabibullahmahmudncs13/Rock-prompt.git
 cd prompt-rock-xenon
 ```
 
