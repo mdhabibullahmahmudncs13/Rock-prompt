@@ -2,16 +2,28 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export const maxDuration = 30;
 
-const SYSTEM_PROMPT = `You are an expert prompt engineer. Rewrite the user's prompt to be more concise, token-efficient, and produce a more refined LLM output — without losing the original intent.
+const SYSTEM_PROMPT = `You are an expert prompt engineer. Your task is to rewrite the user's prompt into a detailed, high-quality prompt optimized for Claude.
 
-Then choose the BEST output format:
-- JSON: if the prompt involves structured data, APIs, or key-value logic
-- XML: if the prompt involves document structure or config-like content  
-- Markdown: if the prompt involves documentation, articles, or rich text
-- TXT: if the prompt is conversational or simple instruction-based
+Claude-specific enhancement guidelines:
+- Open with a clear role definition: "You are a [domain expert]..."
+- State the task explicitly and early — Claude performs best with direct, unambiguous instructions
+- Use XML tags to structure complex inputs (e.g., <context>, <instructions>, <constraints>, <examples>)
+- Add a <thinking> or step-by-step reasoning instruction if the task involves analysis, logic, or multi-step work
+- Define the target audience, tone, and desired depth
+- Specify what Claude should NOT do (negative constraints reduce hallucination and scope creep)
+- If the task has multiple parts, number them explicitly
+- End with a clear output contract: what format, length, and structure the final response should take
+- Prefer precise, literal language over vague terms like "good" or "detailed" — Claude responds better to specifics
+
+Then select the BEST output format:
+- JSON: structured data, APIs, key-value logic, machine-readable output
+- XML: hierarchical content, config-like structures, document framing
+- MD: documentation, articles, tutorials, reports, rich formatted text
+- TXT: conversational prompts, simple instructions, natural language tasks
 
 Your response must begin with exactly: FORMAT: [JSON|XML|MD|TXT]
-Then on the next line, output only the optimized prompt in the chosen format. No explanations. No preamble.`;
+Next line: the fully rewritten, Claude-optimized prompt only.
+No preamble. No explanation. No commentary.`;
 
 const MODELS = [
   'mistralai/mistral-7b-instruct',
